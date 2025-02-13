@@ -9,7 +9,7 @@ export CFIP=${CFIP:-'icook.tw'}          # 优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}       # 节点端口
 export NAME=${NAME:-'derwalld'}            # 节点名称前缀
 export FILE_PATH=${FILE_PATH:-'./temp'} # 节点文件存放路径，运行文件夹，若需要改，index.js中也需要和此处一致，否则无法订阅
-export ARGO_PORT=${ARGO_PORT:-'58001'}  # Argo端口，使用固定隧道token需在cf后台设置的端口和这里一致
+export ARGO_PORT=${ARGO_PORT:-'8001'}  # Argo端口，使用固定隧道token需在cf后台设置的端口和这里一致
 
 if [ ! -d "${FILE_PATH}" ]; then
     mkdir ${FILE_PATH}
