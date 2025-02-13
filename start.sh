@@ -1,15 +1,15 @@
 #!/bin/bash
 export UUID=${UUID:-'b29d5bf8-2a27-4f92-a6f4-53d1558e6ee1'} 
 export NEZHA_SERVER=${NEZHA_SERVER:-'nexus.543083.xyz'} # 哪吒3个变量不全不运行
-export NEZHA_PORT=${NEZHA_PORT:-'5555'} # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls    
-export NEZHA_KEY=${NEZHA_KEY:-'N4QXnW3OGteWRSma5r'}      # 哪吒客户端密钥
+export NEZHA_PORT=${NEZHA_PORT:-'35555'} # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls    
+export NEZHA_KEY=${NEZHA_KEY:-''}      # 哪吒客户端密钥
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}  # 固定隧道域名，留空即启用临时隧道
 export ARGO_AUTH=${ARGO_AUTH:-''}     # 固定json或token，留空即启用临时隧道
 export CFIP=${CFIP:-'icook.tw'}          # 优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}       # 节点端口
 export NAME=${NAME:-'derwalld'}            # 节点名称前缀
 export FILE_PATH=${FILE_PATH:-'./temp'} # 节点文件存放路径，运行文件夹，若需要改，index.js中也需要和此处一致，否则无法订阅
-export ARGO_PORT=${ARGO_PORT:-'8001'}  # Argo端口，使用固定隧道token需在cf后台设置的端口和这里一致
+export ARGO_PORT=${ARGO_PORT:-'58001'}  # Argo端口，使用固定隧道token需在cf后台设置的端口和这里一致
 
 if [ ! -d "${FILE_PATH}" ]; then
     mkdir ${FILE_PATH}
