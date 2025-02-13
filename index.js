@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const exec = require("child_process").exec;
-const PORT = process.env.SERVER_PORT || process.env.PORT || 28860; // 节点订阅端口，若无法订阅请改为分配的端口
+const PORT = process.env.SERVER_PORT || process.env.PORT || 32100; // 节点订阅端口，若无法订阅请改为分配的端口
 const subtxt = './temp/sub.txt' // 节点文件路径，需和start.sh中设置的文件夹对应，否则无法订阅
 
 // Run start.sh
