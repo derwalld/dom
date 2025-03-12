@@ -1,6 +1,6 @@
 #!/bin/bash
 export UUID=${UUID:-'b29d5bf8-2a27-4f92-a6f4-53d1558e6ee1'} 
-export NEZHA_SERVER=${NEZHA_SERVER:-'nexus.yonflee.us.kg'} # 哪吒3个变量不全不运行
+export NEZHA_SERVER=${NEZHA_SERVER:-'nexus.543083.xyz'} # 哪吒3个变量不全不运行
 export NEZHA_PORT=${NEZHA_PORT:-'5555'} # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls    
 export NEZHA_KEY=${NEZHA_KEY:-''}      # 哪吒客户端密钥
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}  # 固定隧道域名，留空即启用临时隧道
